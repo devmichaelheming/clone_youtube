@@ -1,9 +1,12 @@
 import { Icon, makeStyles } from "@material-ui/core";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Apps from "@mui/icons-material/Apps";
+import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import MoreVert from "@mui/icons-material/MoreVert";
+import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 import VideoCall from "@mui/icons-material/VideoCall";
+import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { AppBar, Toolbar, Button, IconButton } from "@mui/material";
 import {
   Box,
@@ -111,9 +114,7 @@ const Home: React.FC = () => {
           <Box sx={{ overflow: "auto" }}>
             <List>
               <ListItem>
-                <ListItemIcon>
-                  <Icon />
-                </ListItemIcon>
+                <ListItemIcon>{<HomeIcon />}</ListItemIcon>
                 <ListItemText
                   classes={{
                     primary: classes.listItemText,
@@ -123,7 +124,7 @@ const Home: React.FC = () => {
               </ListItem>
               <ListItem>
                 <ListItemIcon>
-                  <Icon />
+                  <WhatshotIcon />
                 </ListItemIcon>
                 <ListItemText
                   classes={{
@@ -134,7 +135,7 @@ const Home: React.FC = () => {
               </ListItem>
               <ListItem>
                 <ListItemIcon>
-                  <Icon />
+                  <SubscriptionsIcon />
                 </ListItemIcon>
                 <ListItemText
                   classes={{
